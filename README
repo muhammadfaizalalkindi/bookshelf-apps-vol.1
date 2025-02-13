@@ -1,98 +1,93 @@
 # Bookshelf Apps
 
-Bookshelf Apps is a modular, responsive web application designed to help you manage your personal book collection. Easily add, mark as read/unread, and delete books from your list with a clean and accessible interface.
-
-## Table of Contents  
-
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Contributing](#contributing)
+Bookshelf Apps is a responsive and interactive web application designed to help users manage their personal book collection. The application features a user-friendly interface that allows you to add new books, mark them as read or unread, and remove books from your list. With local storage integration, your book collection is preserved between sessions, making it an ideal tool for organizing your reading list.
 
 ## Features
 
-- **Add Books:** Add new books to your collection using a user-friendly modal form.
-- **Toggle Status:** Easily mark books as read or unread.
-- **Persistent Storage:** Uses local storage to save your book data between sessions.
-- **Responsive Design:** Optimized for both desktop and mobile viewing.
-- **Accessible:** Designed with accessibility in mind, including proper labels and semantic HTML.
+- **Responsive Layout:**  
+  The design adapts to various screen sizes, ensuring an optimal viewing experience on both desktop and mobile devices.
 
-## Project Structure
+- **Add Books:**  
+  Easily add new books to your collection through a modal form with clear input fields.
+
+- **Toggle Book Status:**  
+  Mark books as read or unread with a single click, updating their status instantly.
+
+- **Delete Books:**  
+  Remove books from your collection using the trash icon for a clutter-free experience.
+
+- **Local Storage Integration:**  
+  Book data is saved in your browser's local storage, ensuring your collection is maintained across sessions.
+
+## Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **Local Storage API**
+- **Google Fonts**
+- **Flaticon** (for icons)
+
+## File Structure
 
 ```plaintext
 bookshelf-apps-vol.1/
+├── index.html              # Main HTML file
+├── README.md               # Project documentation
 ├── assets/
-│   └── img/
-│       ├── avatar.png
-│       ├── read.jpg
-│       ├── unread.jpg
-│       └── navbar-img.jpg
+│   └── img/                # Image assets (avatar, book covers, etc.)
 ├── css/
-│   └── style.css
-├── js/
-│   ├── main.js
-│   └── storage.js
-├── index.html
-└── README.md
+│   └── style.css           # Main stylesheet
+└── js/
+    ├── main.js             # Application logic
+    └── storage.js          # Local storage handling
 ```
 
-## Getting Started
+## Installation
 
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Edge, Opera, etc.)
-- An internet connection (to load external fonts and icon libraries)
-
-### Installation
-
-1. **Clone the Repository:**
+1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/muhammadfaizalalkindi/bookshelf-apps-vol.1.git
    ```
 
-2. **Navigate to the Project Folder:**
+2. **Navigate to the project directory:**
 
    ```bash
    cd bookshelf-apps-vol.1
    ```
 
-3. **Open the Application:**
-
-   Open the `index.html` file in your preferred web browser.
+3. **Open `index.html` in your preferred web browser.**
 
 ## Usage
 
-- **Adding a Book:**
-  - Click the "Add" icon to open the modal.
-  - Fill in the book details (title, author, and publication year).
-  - Click "Save" to add the book to your collection.
-  
-- **Toggling Book Status:**
-  - Use the action buttons on each book to mark it as read or unread.
-  
-- **Deleting a Book:**
-  - Click the trash icon on the book item you wish to remove.
+- **Adding a Book:**  
+  Click the "Add" icon to open the modal form, enter the book details (title, author, and publication year), and click "Save" to add the book to your collection.
+
+- **Toggling Book Status:**  
+  Use the action buttons on each book to mark it as read or unread.
+
+- **Deleting a Book:**  
+  Click the trash icon on any book entry to remove it from your list.
 
 ## Customization
 
-- **Styling:**  
-  Modify the `css/style.css` file to change colors, layouts, and other visual elements.
+- **Styles:**  
+  Modify the `css/style.css` file to customize colors, fonts, layouts, and other visual elements to suit your preferences.
 
-- **Functionality:**  
-  Update the JavaScript logic in `js/main.js` and `js/storage.js` to customize how books are managed or stored.
+- **Scripts:**  
+  Update the JavaScript logic in `js/main.js` and `js/storage.js` to adjust behaviors or add new features.
+
+- **Images:**  
+  Replace or add images in the `assets/img` directory to reflect your personal style or branding.
 
 ## Contributing
 
-Contributions are welcome! To contribute:
+Contributions are welcome! To contribute to Bookshelf Apps, please follow these steps:
 
-1. Fork this repository.
+1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
-3. Commit your changes.
-4. Open a pull request detailing your changes.
+3. Commit your changes with clear, descriptive messages.
+4. Open a pull request for review.
 
-Please follow the existing code style and structure when contributing.
+For major changes, please open an issue first to discuss your proposed modifications.
