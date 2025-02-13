@@ -1,0 +1,98 @@
+# Bookshelf Apps
+
+Bookshelf Apps is a modular, responsive web application designed to help you manage your personal book collection. Easily add, mark as read/unread, and delete books from your list with a clean and accessible interface.
+
+## Table of Contents  
+
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Contributing](#contributing)
+
+## Features
+
+- **Add Books:** Add new books to your collection using a user-friendly modal form.
+- **Toggle Status:** Easily mark books as read or unread.
+- **Persistent Storage:** Uses local storage to save your book data between sessions.
+- **Responsive Design:** Optimized for both desktop and mobile viewing.
+- **Accessible:** Designed with accessibility in mind, including proper labels and semantic HTML.
+
+## Project Structure
+
+```plaintext
+bookshelf-apps-vol.1/
+├── assets/
+│   └── img/
+│       ├── avatar.png
+│       ├── read.jpg
+│       ├── unread.jpg
+│       └── navbar-img.jpg
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   └── storage.js
+├── index.html
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Edge, Opera, etc.)
+- An internet connection (to load external fonts and icon libraries)
+
+### Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/muhammadfaizalalkindi/bookshelf-apps-vol.1.git
+   ```
+
+2. **Navigate to the Project Folder:**
+
+   ```bash
+   cd bookshelf-apps-vol.1
+   ```
+
+3. **Open the Application:**
+
+   Open the `index.html` file in your preferred web browser.
+
+## Usage
+
+- **Adding a Book:**
+  - Click the "Add" icon to open the modal.
+  - Fill in the book details (title, author, and publication year).
+  - Click "Save" to add the book to your collection.
+  
+- **Toggling Book Status:**
+  - Use the action buttons on each book to mark it as read or unread.
+  
+- **Deleting a Book:**
+  - Click the trash icon on the book item you wish to remove.
+
+## Customization
+
+- **Styling:**  
+  Modify the `css/style.css` file to change colors, layouts, and other visual elements.
+
+- **Functionality:**  
+  Update the JavaScript logic in `js/main.js` and `js/storage.js` to customize how books are managed or stored.
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Open a pull request detailing your changes.
+
+Please follow the existing code style and structure when contributing.

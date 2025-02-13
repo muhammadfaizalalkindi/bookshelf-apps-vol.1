@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <name="theme-color" content="rgba(233, 61, 107, 0.7)" />
+
+    <title>Bookshelf Apps</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="top-bar"></nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Column 1: User Information & Icons -->
+      <div class="col-1">
+        <div class="user-information my-container">
+          <div class="user-img">
+            <img src="assets/img/avatar.png" alt="User Avatar" />
+          </div>
+          <h1 class="user-name">Muhammad Faizal A</h1>
+          <p class="user-bio">
+            <i class="fi-sr-broom"></i> Student
+          </p>
+          <ul>
+            <li>
+              <p>Number of Books</p>
+              <!-- Provide a default content for screen readers -->
+              <h4 id="jumlahBuku">0</h4>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Icons Section -->
+        <div class="my-container icons">
+          <div class="my-icon">
+            <div class="read-icon">
+              <i class="fi-sr-book-alt"></i>
+            </div>
+            <h5>Be read</h5>
+          </div>
+          <div class="my-icon">
+            <div class="unread-icon">
+              <i class="fi-sr-bookmark"></i>
+            </div>
+            <h5>Unread</h5>
+          </div>
+          <div class="my-icon">
+            <div class="add-book" id="add-book">
+              <i class="fi-sr-add"></i>
+            </div>
+            <h5>Add</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Welcome Message & Book Lists -->
+      <div class="col-2">
+        <div class="my-container welcome">
+          <h1>Welcome to Bookshelf Apps</h1>
+          <p>
+            Managing books is easier only on Bookshelf Apps. Try it now!
+          </p>
+        </div>
+
+        <div class="content-book">
+          <div class="unread" id="unread">
+            <h4>Unread</h4>
+          </div>
+          <div class="read" id="read">
+            <h4>Be read</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Adding a New Book -->
+    <div id="modal">
+      <section class="my-container">
+        <h2>New Book</h2>
+        <form id="form">
+          <div class="input-group">
+            <!-- Label is visually hidden but accessible to screen readers -->
+            <label for="title" class="visually-hidden">Book Title</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Book Title"
+              class="input-form"
+              maxlength="120"
+              pattern="^[a-zA-Z0-9_ ]*$"
+              required
+              aria-label="Book Title"
+            />
+          </div>
+          <div class="input-group">
+            <label for="author" class="visually-hidden">Author</label>
+            <input
+              type="text"
+              id="author"
+              placeholder="Author"
+              class="input-form"
+              maxlength="60"
+              pattern="^[a-zA-Z0-9_ ]*$"
+              required
+              aria-label="Author"
+            />
+          </div>
+          <div class="input-group">
+            <label for="year" class="visually-hidden">Publication Year</label>
+            <input
+              type="date"
+              id="year"
+              class="input-form"
+              min="1900"
+              max="2026"
+              aria-label="Publication Year"
+            />
+          </div>
+          <div class="button-group">
+            <button type="reset" class="close" id="close">Close</button>
+            <button type="submit" id="save">Save</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
